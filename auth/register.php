@@ -2,6 +2,9 @@
 <?php require "../config/config.php"; ?>
 <?php 
 
+    If(isset($_SESSION['username'])) {
+        header("location: ".APPURL."");
+    }
 
     if(isset($_POST['submit'])) {
 
